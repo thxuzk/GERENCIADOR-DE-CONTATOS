@@ -129,7 +129,7 @@ void adicionarContato(Contato contatos[MAX_CONTATO], int *numcontatos){
 void salvarContatos(Contato contatos[MAX_CONTATO], int numcontatos){
 
     FILE *arquivo;
-    arquivo = fopen("contatos.txt", "w");
+    arquivo = fopen("contatos.txt", "a");
 
     if(arquivo == NULL){
 
