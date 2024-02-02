@@ -1,4 +1,7 @@
 # GERENCIADOR-DE-CONTATOS
-Este projeto apresenta um código em C, oferecendo uma solução direta para o armazenamento de contatos com persistência em arquivo. A aplicação possibilita a adição, visualização e salvamento de contatos, adotando uma abordagem simples e eficiente.
+O projeto visa criar um programa simples em linguagem C para gerenciar contatos, oferecendo funcionalidades básicas de adição, visualização e salvamento de informações. A aplicação utiliza um sistema de persistência em arquivo para armazenar os dados dos contatos de forma duradoura. A abordagem adotada é direta, focando na eficiência e na simplicidade para facilitar a compreensão dos conceitos de programação em C, especialmente para iniciantes. O programa proporciona uma experiência amigável ao usuário, permitindo a interação intuitiva com as operações de gerenciamento de contatos.
 
-##CRÉDITOS 
+## Créditos
+Emylli Soares Santos 
+Hawryson do Nascimento Mesquita
+Matheus Sipriano Santos 
