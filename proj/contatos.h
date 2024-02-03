@@ -33,5 +33,6 @@ void adicionarContato(Contato contatos[MAX_CONTATO], int *numcontatos);
 void salvarContatos(Contato contatos[MAX_CONTATO], int numcontatos);
 void lerContatos(Contato contatos[MAX_CONTATO], int *numcontatos);
 void exibirContatos(Contato contatos[], int numcontatos);
+void editarContato(Contato contatos[], int numcontatos);
 
 #endif

@@ -216,3 +216,76 @@ void exibirContatos(Contato contatos[], int numcontatos){
         esperarEntrada();
     }
 }
+
+void editarContato(Contato contatos[], int numcontatos) {
+    char nome[51];
+    int encontrado = 0, i;
+
+    limparTerminal();
+    printf(WHITE"Digite o nome do contato que deseja editar: "FIM_COR);
+    limparBuffer();
+    scanf("%[^\n]", nome);
+
+    for (i=0;i<numcontatos;i++) {
+        if (strcmp(nome, contatos[i].nome) == 0) {
+            limparTerminal();
+            printf(YELLOW"\nContato encontrado:\n"FIM_COR);
+            printf(YELLOW"Nome: "FIM_COR"%s\n", contatos[i].nome);
+            printf(YELLOW"Telefone: "FIM_COR"%s\n", contatos[i].telefone);
+            printf(YELLOW"Email: "FIM_COR"%s\n", contatos[i].email);
+
+            printf(WHITE"\nDigite o novo nome: "FIM_COR);
+            limparBuffer();
+            scanf("%[^\n]", contatos[i].nome);
+
+            printf(WHITE"Digite o novo telefone (formato +55 xx xxxx-xxxx): "FIM_COR);
+            limparBuffer();
+            scanf("%[^\n]", contatos[i].telefone);
+
+            while (verificarNumero(contatos[i].telefone) != 1) {
+                limparTerminal();
+                printf(RED"\nNúmero inválido. Pressione Enter para digitar novamente..."FIM_COR);
+                getchar();
+                limparTerminal();
+                printf(WHITE"Nome: "FIM_COR);
+                printf("%s\n", contatos[i].nome);
+                printf(WHITE"Telefone (formato +55 xx xxxx-xxxx): "FIM_COR);
+                scanf("%[^\n]", contatos[i].telefone);
+                limparBuffer();
+            }
+
+            limparBuffer();
+
+            printf(WHITE"Digite o novo email: "FIM_COR);
+            scanf("%s", contatos[i].email);
+            getchar();
+
+            while (verificarEmail(contatos[i].email) != 1) {
+                limparTerminal();
+                printf(RED"\nEmail inválido. Pressione Enter para digitar novamente..."FIM_COR);
+                getchar();
+                limparTerminal();
+                printf(WHITE"Nome: "FIM_COR);
+                printf("%s\n", contatos[i].nome);
+                printf(WHITE"Telefone (formato +55 xx xxxx-xxxx): "FIM_COR);
+                printf("%s\n", contatos[i].telefone);
+                printf(WHITE"Email: "FIM_COR);
+                scanf("%s", contatos[i].email);
+                limparBuffer();
+            }
+
+            limparBuffer();
+
+            printf(GREEN"\nContato editado com sucesso! Pressione enter para continuar..."FIM_COR);
+            getchar();
+            encontrado = 1;
+            break;
+        }
+    }
+
+    if (!encontrado) {
+        limparTerminal();
+        printf(RED"\nContato não encontrado. Pressione Enter para voltar..."FIM_COR);
+        getchar();
+    }
+}
