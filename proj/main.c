@@ -55,7 +55,7 @@ int main(){
                 break;
             case 6:
                 limparTerminal();
-                printf(BLUE"\nObrigado por usar nosso programa!\n\n"FIM_COR);
+                printf(BLUE"\nObrigado por utilizar nosso programa!\n\n"FIM_COR);
                 break;
             default:
                 printf(RED"\nEscolha invalida. Pressione Enter para selecionar novamente..."FIM_COR);

@@ -84,7 +84,7 @@ void adicionarContato(Contato contatos[MAX_CONTATO], int *numcontatos){
             limparTerminal();
             printf(WHITE"Nome: "FIM_COR);
             printf("%s\n", contatos[*numcontatos].nome);
-            printf(WHITE"Telefone (formato +55 xx xxxx-xxxx): "FIM_COR);
+            printf(WHITE"Telefone (formato +55 xx xxxxx-xxxx): "FIM_COR);
             scanf("%[^\n]", contatos[*numcontatos].telefone);
             limparBuffer();
         }
