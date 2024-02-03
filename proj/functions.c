@@ -48,9 +48,9 @@ int verificarEmail(char *email){
 
     for (i = 0; i < 10; i++){
 
-        if(email[tamanho - 10 + i] != "@gmail.com"[i]){
+        if((email[tamanho - 10 + i] != "@gmail.com"[i]) && email[tamanho - 12 + i] != "@outlook.com"[i]){
             return 0;
-        }
+        } 
     }
 
     return 1;
