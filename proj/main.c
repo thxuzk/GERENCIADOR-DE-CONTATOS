@@ -7,14 +7,20 @@ int main(){
 
     do {
         limparTerminal();
-        printf(BLUE"\t\t----------GERENCIADOR DE CONTATOS----------\n\n"FIM_COR);
-        printf(BLUE"1. Adicionar Contato\n"FIM_COR);
-        printf(BLUE"2. Editar Contato\n"FIM_COR);
-        printf(BLUE"3. Salvar Contatos\n"FIM_COR);
-        printf(BLUE"4. Exibir Contatos\n"FIM_COR);
-        printf(BLUE"5. Carregar Contatos Salvos\n"FIM_COR);
-        printf(BLUE"6. Sair\n"FIM_COR);
-        printf(BLUE"Escolha: "FIM_COR);
+        printf(BLUE"\t\t========== GERENCIADOR DE CONTATOS ==========\n\n"FIM_COR);
+        printf(BLUE"1. "FIM_COR);
+        printf("Adicionar Contato\n");
+        printf(BLUE"2. "FIM_COR);
+        printf("Editar Contato\n");
+        printf(BLUE"3. "FIM_COR);
+        printf("Salvar Contatos\n");
+        printf(BLUE"4. "FIM_COR);
+        printf("Exibir Contatos\n");
+        printf(BLUE"5. "FIM_COR);
+        printf("Carregar Contatos Salvos\n");
+        printf(BLUE"6. "FIM_COR);
+        printf("Sair\n");
+        printf(BLUE"Selecione uma opcao: ");
 
         if(scanf("%d", &escolha) != 1){
             printf(RED"\nEscolha invalida. Pressione Enter para selecionar novamente..."FIM_COR);
