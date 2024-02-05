@@ -238,7 +238,7 @@ void editarContato(Contato contatos[], int numcontatos) {
             limparBuffer();
             scanf("%[^\n]", contatos[i].nome);
 
-            printf(WHITE"Digite o novo telefone (formato +55 xx xxxx-xxxx): "FIM_COR);
+            printf(WHITE"Digite o novo telefone (formato +55 xx xxxxx-xxxx): "FIM_COR);
             limparBuffer();
             scanf("%[^\n]", contatos[i].telefone);
 
@@ -249,7 +249,7 @@ void editarContato(Contato contatos[], int numcontatos) {
                 limparTerminal();
                 printf(WHITE"Nome: "FIM_COR);
                 printf("%s\n", contatos[i].nome);
-                printf(WHITE"Telefone (formato +55 xx xxxx-xxxx): "FIM_COR);
+                printf(WHITE"Telefone (formato +55 xx xxxxx-xxxx): "FIM_COR);
                 scanf("%[^\n]", contatos[i].telefone);
                 limparBuffer();
             }
@@ -267,7 +267,7 @@ void editarContato(Contato contatos[], int numcontatos) {
                 limparTerminal();
                 printf(WHITE"Nome: "FIM_COR);
                 printf("%s\n", contatos[i].nome);
-                printf(WHITE"Telefone (formato +55 xx xxxx-xxxx): "FIM_COR);
+                printf(WHITE"Telefone (formato +55 xx xxxxx-xxxx): "FIM_COR);
                 printf("%s\n", contatos[i].telefone);
                 printf(WHITE"Email: "FIM_COR);
                 scanf("%s", contatos[i].email);
